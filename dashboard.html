@@ -1,66 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100">
-  <!-- Sidebar -->
-  <div class="flex">
-    <div class="w-64 h-screen bg-gray-800 text-white p-6 flex flex-col">
-      <!-- Profile Section -->
-      <div class="mb-6 relative">
-        <img src="images/Profile.png" alt="Profile Photo" class="w-12 h-12 rounded-xl ml-4">
-        <div>
-          <h3 class="text-2xl font-bold">Samantha</h3>
-          <p class="text-sm text-gray-400">samantha@email.com</p>
-          <span class="absolute -top-5 left-12 text-white text-xs font-semibold py-1 px-2 rounded-full mt-2 inline-block bg-red-500">4</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body class="">
+    <!-- Sidebar -->
+    <div class="flex">
+      <div class="w-64 h-screen bg-black text-white px-10 py-7 flex flex-col">
+        <!-- Profile Section -->
+        <div class="mb-6 relative">
+          <img
+            src="images/Profile.png"
+            alt="Profile Photo"
+            class="w-12 h-12 rounded-xl ml-4"
+          />
+          <div>
+            <h3 class="text-2xl font-bold">Samantha</h3>
+            <p class="text-sm text-gray-400">samantha@email.com</p>
+            <span
+              class="absolute -top-5 left-12 text-white text-xs font-semibold py-1 px-2 rounded-full mt-2 inline-block bg-red-500"
+              >4</span
+            >
+          </div>
         </div>
+
+        <!-- Navigation -->
+        <nav>
+          <ul>
+            <li class="mb-4">
+              <a
+                href="#"
+                class="block p-2 rounded hover:bg-gray-700 text-xl text-gray-500 font-semibold hover:text-white"
+                >Dashboard</a
+              >
+            </li>
+            <li class="mb-4">
+              <a
+                href="#"
+                class="block p-2 rounded hover:bg-gray-700 text-xl font-semibold pr-16"
+                >Expenses</a
+              >
+            </li>
+            <li class="mb-4">
+              <a
+                href="#"
+                class="block p-2 rounded hover:bg-gray-700 text-xl text-gray-500 font-semibold hover:text-white"
+                >Wallets</a
+              >
+            </li>
+            <li class="mb-4">
+              <a
+                href="#"
+                class="block p-2 rounded hover:bg-gray-700 text-xl text-gray-500 font-semibold hover:text-white"
+                >Summary</a
+              >
+            </li>
+            <li class="mb-4">
+              <a
+                href="#"
+                class="block p-2 rounded hover:bg-gray-700 text-xl text-gray-500 font-semibold hover:text-white"
+                >Accounts</a
+              >
+            </li>
+            <li class="mb-4">
+              <a
+                href="#"
+                class="block p-2 rounded hover:bg-gray-700 text-xl text-gray-500 font-semibold hover:text-white"
+                >Settings</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
 
-      <!-- Navigation -->
-      <nav>
-        <ul>
-          <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-gray-700 text-xl text-gray-500 font-semibold hover:text-white">Dashboard</a></li>
-          <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-gray-700 text-xl font-semibold">Expenses</a></li>
-          <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-gray-700 text-xl text-gray-500 font-semibold hover:text-white">Wallets</a></li>
-          <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-gray-700 text-xl text-gray-500 font-semibold hover:text-white">Summary</a></li>
-          <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-gray-700 text-xl text-gray-500 font-semibold hover:text-white">Accounts</a></li>
-          <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-gray-700 text-xl text-gray-500 font-semibold hover:text-white">Settings</a></li>
-        </ul>
-      </nav>
+      <!-- Main Content -->
+      <main class="bg-black w-full p-5">
+        <section class="flex bg-white rounded-2xl">
+          <div class="leftSide p-6 px-16">
+            <div class="flex justify-between">
+              <div>
+                <h2 class="text-3xl font-bold pb-2">Expenses</h2>
+                <h4 class="text-sm text-gray-400">01- 25 March, 2020</h4>
+              </div>
+              <div>
+                <img src="images/Users.png" alt="" />
+              </div>
+            </div>
+            <div>
+              <img class="py-3" src="images/Stats.png" alt="" />
+            </div>
+            <div class="flex items-center justify-between pb-2">
+              <h2 class="text-xl font-bold">Todays</h2>
+              <p class="text-xl font-bold text-gray-400">...</p>
+            </div>
+            <hr class="w-full" />
+            <div>
+              <div class="flex items-center justify-between pt-3">
+                <div class="flex items-center gap-5">
+                  <div
+                    class="Shape flex items-center justify-center rounded-full w-8 h-8"
+                  >
+                    <img class="" src="images/Shape.png" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="text-md font-semibold">Grocery</h2>
+                    <p class="text-xs text-gray-400">
+                      5:12 pm • Belanja di pasar
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <h2>-326.800</h2>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-5">
+                <div class="flex items-center gap-5">
+                  <div
+                    class="Shape1 flex items-center justify-center rounded-full w-8 h-8"
+                  >
+                    <img class="" src="images/Shape1.png" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="text-md font-semibold">Transportation</h2>
+                    <p class="text-xs text-gray-400">5:12 pm • Naik bus umum</p>
+                  </div>
+                </div>
+                <div>
+                  <h2>-15.500</h2>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-5">
+                <div class="flex items-center gap-5">
+                  <div
+                    class="Shape2 flex items-center justify-center rounded-full w-8 h-8"
+                  >
+                    <img class="" src="images/Shape2.png" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="text-md font-semibold">Housing</h2>
+                    <p class="text-xs text-gray-400">5:12 pm • Bayar Listrik</p>
+                  </div>
+                </div>
+                <div>
+                  <h2>-185.750</h2>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-2 pb-1">
+                <h2 class="text-lg font-bold">Monday, 23 March 2020</h2>
+                <p class="text-xl font-bold text-gray-400">...</p>
+              </div>
+              <hr class="w-full" />
+              <div class="flex items-center justify-between pt-5">
+                <div class="flex items-center gap-5">
+                  <div
+                    class="Shape3 flex items-center justify-center rounded-full w-8 h-8"
+                  >
+                    <img class="" src="images/Shape3.png" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="text-md font-semibold">Food and Drink</h2>
+                    <p class="text-xs text-gray-400">5:12 pm • Makan Steak</p>
+                  </div>
+                </div>
+                <div>
+                  <h2>-156.000</h2>
+                </div>
+              </div>
+              <div class="flex items-center justify-between pt-5">
+                <div class="flex items-center gap-5">
+                  <div
+                    class="Shape4 flex items-center justify-center rounded-full w-8 h-8"
+                  >
+                    <img class="" src="images/Shape4.png" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="text-md font-semibold">Entertainment</h2>
+                    <p class="text-xs text-gray-400">
+                      5:12 pm • Nonton Bioskop
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <h2>-35.200</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rightside p-4 px-16 rounded-tr-2xl rounded-br-2xl">
+            <div class="pb-1">
+              <div
+                class="text-gray-700 font-semibold flex items-center justify-between pb-1"
+              >
+                <h1>Food and Drinks</h1>
+                <p>872.400</p>
+              </div>
+              <div class="bg-gray-400 rounded-xl mb-2">
+                <p class="w-24 bg-green-400 text-white py-1 rounded-l"></p>
+              </div>
+            </div>
+            <div class="pb-1">
+              <div
+                class="text-gray-700 font-semibold flex items-center justify-between pb-1"
+              >
+                <h1>Shopping</h1>
+                <p>1,378.200</p>
+              </div>
+              <div class="bg-gray-400 rounded-xl mb-2">
+                <p class="w-36 bg-green-400 text-white py-1 rounded-l"></p>
+              </div>
+            </div>
+            <div class="pb-1">
+              <div
+                class="text-gray-700 font-semibold flex items-center justify-between pb-1"
+              >
+                <h1>Housing</h1>
+                <p>928.500</p>
+              </div>
+              <div class="bg-gray-400 rounded-xl mb-2">
+                <p class="w-28 bg-green-400 text-white py-1 rounded-l"></p>
+              </div>
+            </div>
+            <div class="pb-1">
+              <div
+                class="text-gray-700 font-semibold flex items-center justify-between pb-1"
+              >
+                <h1>Transportation</h1>
+                <p>420.700</p>
+              </div>
+              <div class="bg-gray-400 rounded-xl mb-2">
+                <p class="w-20 bg-green-400 text-white py-1 rounded-l"></p>
+              </div>
+            </div>
+            <div class="pb-1">
+              <div
+                class="text-gray-700 font-semibold flex items-center justify-between pb-1"
+              >
+                <h1>Vehicle</h1>
+                <p>520.000</p>
+              </div>
+              <div class="bg-gray-400 rounded-xl mb-1">
+                <p class="w-28 bg-green-400 text-white py-1 rounded-l"></p>
+              </div>
+            </div>
+            <div class="flex items-center justify-center">
+                <img src="images/BoxTips.png" alt="">
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-
-    <!-- Main Content -->
-    <div class="flex-1 p-6">
-      <header class="flex justify-between items-center bg-white p-4 rounded shadow mb-6">
-        <h1 class="text-3xl font-semibold">Dashboard</h1>
-        <div class="flex items-center space-x-4">
-          <input type="text" placeholder="Search..." class="p-2 border rounded">
-          <button class="bg-blue-500 text-white p-2 rounded">Search</button>
-        </div>
-      </header>
-
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Card 1 -->
-        <div class="bg-white p-6 rounded shadow">
-          <h2 class="text-xl font-semibold mb-4">Card 1</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-        </div>
-        <!-- Card 2 -->
-        <div class="bg-white p-6 rounded shadow">
-          <h2 class="text-xl font-semibold mb-4">Card 2</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-        </div>
-        <!-- Card 3 -->
-        <div class="bg-white p-6 rounded shadow">
-          <h2 class="text-xl font-semibold mb-4">Card 3</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-        </div>
-      </section>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
