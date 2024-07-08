@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <!-- Sidebar -->
+  <div class="flex">
+    <div class="w-64 h-screen bg-gray-800 text-white p-6 flex flex-col">
+      <!-- Profile Section -->
+      <div class="mb-6 relative">
+        <img src="images/Profile.png" alt="Profile Photo" class="w-12 h-12 rounded-xl ml-4">
+        <div>
+          <h3 class="text-2xl font-bold">Samantha</h3>
+          <p class="text-sm text-gray-400">samantha@email.com</p>
+          <span class="absolute -top-5 left-12 text-white text-xs font-semibold py-1 px-2 rounded-full mt-2 inline-block bg-red-500">4</span>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-gray-700 text-xl text-gray-500 font-semibold hover:text-white">Dashboard</a></li>
+          <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-gray-700 text-xl font-semibold">Expenses</a></li>
+          <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-gray-700 text-xl text-gray-500 font-semibold hover:text-white">Wallets</a></li>
+          <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-gray-700 text-xl text-gray-500 font-semibold hover:text-white">Summary</a></li>
+          <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-gray-700 text-xl text-gray-500 font-semibold hover:text-white">Accounts</a></li>
+          <li class="mb-4"><a href="#" class="block p-2 rounded hover:bg-gray-700 text-xl text-gray-500 font-semibold hover:text-white">Settings</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 p-6">
+      <header class="flex justify-between items-center bg-white p-4 rounded shadow mb-6">
+        <h1 class="text-3xl font-semibold">Dashboard</h1>
+        <div class="flex items-center space-x-4">
+          <input type="text" placeholder="Search..." class="p-2 border rounded">
+          <button class="bg-blue-500 text-white p-2 rounded">Search</button>
+        </div>
+      </header>
+
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white p-6 rounded shadow">
+          <h2 class="text-xl font-semibold mb-4">Card 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white p-6 rounded shadow">
+          <h2 class="text-xl font-semibold mb-4">Card 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white p-6 rounded shadow">
+          <h2 class="text-xl font-semibold mb-4">Card 3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
